@@ -10,22 +10,17 @@ public class BankAccount {
     }
 
     public void deposit(BigDecimal amount) {
-        balance=balance.add(amount);
+        balance = balance.add(amount);
     }
 
-    public void withdraw(BigDecimal amount) {
+    public void withdraw(BigDecimal amount) throws NegativeAmountException {
 
-        try {
-            if (balance.compareTo(balance.subtract(amount)) < 0) //see if it works
-            {
-                throw new NegativeAmountException();
-            } else {
-                balance = balance.subtract(amount);
-            }
-        } catch (NegativeAmountException n) {
-            System.out.println("You have insufficient funds on the card");
+        if (balance.compareTo(amount) < 0) //see if it works
+        {
+            throw new NegativeAmountException("You have insufficient funds on the card");
+        } else {
+            balance = balance.subtract(amount);
         }
-
 
     }
 
