@@ -4,15 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7ee0ff-b4a3-49a7-87da-a9ed351c53ba" name="Changes" comment="" />
+    <list default="true" id="9a7ee0ff-b4a3-49a7-87da-a9ed351c53ba" name="Changes" comment="Create exception classes &#10;InsufficientFundsException, NegativeAmountException and AccountNotFoundException">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NegativeAmountException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NegativeAmountException.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2Y1sveJ45A2aN7jov9wO9qZZOtw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,10 +42,44 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/Projects/IdeaProjects/SecondLab",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "E:/Projects/IdeaProjects/Lab5/src/main/java/org/example/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="withdrawTest.testWithdraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="withdrawTest" />
+      <option name="METHOD_NAME" value="testWithdraw" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.withdrawTest.testWithdraw" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,19 +88,72 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699704654799</updated>
-      <workItem from="1699704656074" duration="8000" />
+      <workItem from="1699704656074" duration="5671000" />
+      <workItem from="1699796408209" duration="5369000" />
     </task>
+    <task id="LOCAL-00001" summary="Create project Lab5">
+      <option name="closed" value="true" />
+      <created>1699704757500</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699704757500</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add dependency for junit to pom.xml">
+      <option name="closed" value="true" />
+      <created>1699704910980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699704910980</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create BankAccount class">
+      <option name="closed" value="true" />
+      <created>1699709087029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699709087029</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create Bank class">
+      <option name="closed" value="true" />
+      <created>1699709297641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699709297641</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create exception classes &#10;InsufficientFundsException, NegativeAmountException and AccountNotFoundException">
+      <option name="closed" value="true" />
+      <created>1699711340276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699711340276</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create project Lab5" />
+    <MESSAGE value="Add dependency for junit to pom.xml" />
+    <MESSAGE value="Create BankAccount class" />
+    <MESSAGE value="Create Bank class" />
+    <MESSAGE value="Create exception classes &#10;InsufficientFundsException, NegativeAmountException and AccountNotFoundException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create exception classes &#10;InsufficientFundsException, NegativeAmountException and AccountNotFoundException" />
   </component>
 </project>
