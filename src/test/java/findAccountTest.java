@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class findAccountTest {
 
-    Bank bank;
+    private Bank bank;
 
     @BeforeEach
     public void setUp() throws NegativeAmountException {
