@@ -7,18 +7,18 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.*;
 
 class withdrawTest {
-    BankAccount bankAccount = new BankAccount("Stefan");
+    BankAccount bankAccount ;
 
     @BeforeEach
     public void setUp() {
-        bankAccount.deposit(new BigDecimal("12312.124"));
+        bankAccount = new BankAccount("Stefan",new BigDecimal("12312.124"));
     }
 
     @Test
     void testWithdrawIsCorrect() throws NegativeAmountException {
         bankAccount.withdraw(new BigDecimal("123.92"));
 
-        assertEquals(bankAccount.getAccountSummary(), new BigDecimal("12188.204"));
+        assertEquals(bankAccount.getBalance(), new BigDecimal("12188.204"));
     }
     @Test
     void testWithdrawThrowException()throws NegativeAmountException
