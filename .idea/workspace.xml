@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7ee0ff-b4a3-49a7-87da-a9ed351c53ba" name="Changes" comment="Create constructor for specialized exception class AccountNotFoundException">
+    <list default="true" id="9a7ee0ff-b4a3-49a7-87da-a9ed351c53ba" name="Changes" comment="Initialize createAccount method&#10;Add value to bankAccount List&#10;Initialize findAccount method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/withdrawTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/withdrawTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InsufficientFundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InsufficientFundsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/findAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/findAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.findAccountTest">
+  <component name="RunManager" selected="JUnit.withdrawTest">
     <configuration name="findAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab5" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,11 +74,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="findAccountTest.testFindAccountThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="transferMoneyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="findAccountTest" />
-      <option name="METHOD_NAME" value="testFindAccountThrowsException" />
+      <option name="MAIN_CLASS_NAME" value="transferMoneyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="transferMoneyTest.testTransferMoneyFailed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="transferMoneyTest" />
+      <option name="METHOD_NAME" value="testTransferMoneyFailed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="transferMoneyTest.testTransferMoneySuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="transferMoneyTest" />
+      <option name="METHOD_NAME" value="testTransferMoneySuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,33 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="withdrawTest.testWithdrawIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="withdrawTest" />
-      <option name="METHOD_NAME" value="testWithdrawIsCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="withdrawTest.testWithdrawThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lab5" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="withdrawTest" />
-      <option name="METHOD_NAME" value="testWithdrawThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.findAccountTest" />
         <item itemvalue="JUnit.withdrawTest" />
-        <item itemvalue="JUnit.withdrawTest.testWithdrawThrowException" />
-        <item itemvalue="JUnit.withdrawTest.testWithdrawIsCorrect" />
-        <item itemvalue="JUnit.findAccountTest.testFindAccountThrowsException" />
+        <item itemvalue="JUnit.findAccountTest" />
+        <item itemvalue="JUnit.transferMoneyTest" />
+        <item itemvalue="JUnit.transferMoneyTest.testTransferMoneySuccess" />
+        <item itemvalue="JUnit.transferMoneyTest.testTransferMoneyFailed" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +132,7 @@
       <updated>1699704654799</updated>
       <workItem from="1699704656074" duration="5671000" />
       <workItem from="1699796408209" duration="10855000" />
-      <workItem from="1699869427040" duration="5829000" />
+      <workItem from="1699869427040" duration="9368000" />
     </task>
     <task id="LOCAL-00001" summary="Create project Lab5">
       <option name="closed" value="true" />
@@ -214,7 +214,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699878365717</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Change BeforeEach annotation context because constructor of BankAccount class has been changed">
+      <option name="closed" value="true" />
+      <created>1699878481403</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699878481403</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Initialize createAccount method&#10;Add value to bankAccount List&#10;Initialize findAccount method">
+      <option name="closed" value="true" />
+      <created>1699878558241</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699878558241</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +258,9 @@
     <MESSAGE value="Create JUnit test for findAccount method in class Bank" />
     <MESSAGE value="Create new value ID where class examples can save individual number&#10;Initialize method getAccountSummary" />
     <MESSAGE value="Create constructor for specialized exception class AccountNotFoundException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create constructor for specialized exception class AccountNotFoundException" />
+    <MESSAGE value="Change BeforeEach annotation context because constructor of BankAccount class has been changed" />
+    <MESSAGE value="Initialize createAccount method&#10;Add value to bankAccount List&#10;Initialize findAccount method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize createAccount method&#10;Add value to bankAccount List&#10;Initialize findAccount method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
