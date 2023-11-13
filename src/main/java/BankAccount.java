@@ -1,12 +1,15 @@
 import java.math.BigDecimal;
 
 public class BankAccount {
-    private int accountNumber;
+    private static int accountNumber = 0;
+    private int ID;
     private String accountName;
     private BigDecimal balance = new BigDecimal("0.0");
 
-    public BankAccount(String accountName) {
-        this.accountNumber = accountNumber;
+    public BankAccount(String accountName,BigDecimal initialDeposit) {
+        this.accountName = accountName;
+        this.balance=initialDeposit;
+        ID=++accountNumber;
     }
 
     public void deposit(BigDecimal amount) {
@@ -15,7 +18,7 @@ public class BankAccount {
 
     public void withdraw(BigDecimal amount) throws NegativeAmountException {
 
-        if (balance.compareTo(amount) < 0) //see if it works
+        if (balance.compareTo(amount) < 0)
         {
             throw new NegativeAmountException("You have insufficient funds on the card");
         } else {
@@ -27,9 +30,12 @@ public class BankAccount {
     public BigDecimal getBalance() {
         return balance;
     }
-
-    public BigDecimal getAccountSummary() {
-        return balance;
-
+    public int getAccountNumber()
+    {
+        return ID;
+    }
+    public String getAccountSummary() {
+        String str =accountName+" "+ID+" "+balance ;
+        return str;
     }
 }
