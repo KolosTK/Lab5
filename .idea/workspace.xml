@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7ee0ff-b4a3-49a7-87da-a9ed351c53ba" name="Changes" comment="Initialize createAccount method&#10;Add value to bankAccount List&#10;Initialize findAccount method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InsufficientFundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InsufficientFundsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/findAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/findAccountTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9a7ee0ff-b4a3-49a7-87da-a9ed351c53ba" name="Changes" comment="Create new test for transferMoney method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +127,7 @@
       <updated>1699704654799</updated>
       <workItem from="1699704656074" duration="5671000" />
       <workItem from="1699796408209" duration="10855000" />
-      <workItem from="1699869427040" duration="9368000" />
+      <workItem from="1699869427040" duration="9772000" />
     </task>
     <task id="LOCAL-00001" summary="Create project Lab5">
       <option name="closed" value="true" />
@@ -230,7 +225,31 @@
       <option name="project" value="LOCAL" />
       <updated>1699878558241</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add access modifier for batter code understanding">
+      <option name="closed" value="true" />
+      <created>1699882076716</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699882076716</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add new values sender and receiver for implementation transferMoney method">
+      <option name="closed" value="true" />
+      <created>1699882175902</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699882175902</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Create new test for transferMoney method">
+      <option name="closed" value="true" />
+      <created>1699882355237</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699882355237</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +279,10 @@
     <MESSAGE value="Create constructor for specialized exception class AccountNotFoundException" />
     <MESSAGE value="Change BeforeEach annotation context because constructor of BankAccount class has been changed" />
     <MESSAGE value="Initialize createAccount method&#10;Add value to bankAccount List&#10;Initialize findAccount method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize createAccount method&#10;Add value to bankAccount List&#10;Initialize findAccount method" />
+    <MESSAGE value="Add access modifier for batter code understanding" />
+    <MESSAGE value="Add new values sender and receiver for implementation transferMoney method" />
+    <MESSAGE value="Create new test for transferMoney method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new test for transferMoney method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
