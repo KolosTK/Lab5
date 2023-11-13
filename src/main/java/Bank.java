@@ -5,6 +5,8 @@ import java.util.Optional;
 
 public class Bank {
     private List<BankAccount> bankAccount = new ArrayList<BankAccount>();
+    private BankAccount sender;
+    private BankAccount receiver;
 
     public void createAccount(String accountName, BigDecimal initialDeposit) throws NegativeAmountException{
         BankAccount bankAcc = new BankAccount(accountName,initialDeposit);
@@ -24,7 +26,15 @@ public class Bank {
         throw new AccountNotFoundException("Account not found");
     }
 
-    public void transferMoney(int accountNumber, int toAccountNumber, BigDecimal amount) {
+    public void transferMoney(int accountNumber, int toAccountNumber, BigDecimal amount) throws AccountNotFoundException, InsufficientFundsException,NegativeAmountException{
+        sender = findAccount(accountNumber);
+        receiver = findAccount(toAccountNumber);
+
+        if (sender.getBalance().compareTo(receiver.getBalance())<=0){
+            throw new InsufficientFundsException();
+        }
+        sender.withdraw(amount);
+        receiver.deposit(amount);
     }
 
 }
